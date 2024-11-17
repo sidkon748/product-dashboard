@@ -11,6 +11,8 @@ const ProductList = ({ products }) => {
     <div className="product-list">
       {products.map((product) => (
         <ProductItem 
+        // Task 5
+        // Implement Keys in the ProductList Component
           key={product.id}  
           product={product}  
         />
