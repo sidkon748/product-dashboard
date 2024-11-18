@@ -5,7 +5,7 @@
 import React, { useState } from 'react';
 
 // function starts off stating inputs of name, price, and description as consts
-function AddProductForm({ onAddProduct }) {
+function AddProductForm({ addProduct }) {
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
     const [description, setDescription] = useState('');
@@ -15,14 +15,14 @@ function AddProductForm({ onAddProduct }) {
     const handleSubmit = (event) => {
         event.preventDefault();
       if (name && price && description) {
-        onAddProduct({ name, price: parseFloat(price), description });
+        addProduct({ name, price: parseFloat(price), description });
         setName('');
         setPrice('');
         setDescription('');
       }
     };
   
-    // Returns Name, Price, and Description properties of product for display as a form
+    // Returns Name, Price, and Description properties of product for display as a form for user input
     return (
       <form onSubmit={handleSubmit}>
         <input

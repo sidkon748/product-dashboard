@@ -28,8 +28,11 @@ const App = () => {
 
   // Function for adding new products
   const addProduct = (newProduct) => {
-    setProducts([...products, newProduct]);
+    setProducts((prevProducts) => [...prevProducts, newProduct]);
   };
+
+  //Task 7 
+  // Pass Data Between Components
 
   // Output for product list applying addProduct function to AddProductForm & ProductList
   return (
