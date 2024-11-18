@@ -21,6 +21,9 @@ const App = () => {
     { id: 10, name: 'Lemonade', price: 29.99, description: 'Instant Mix Refreshment' },
     { id: 11, name: 'Bacon', price: 39.99, description: 'Uncaged Smokehouse Variety' },
     { id: 12, name: 'Book', price: 49.99, description: 'How to Conquer Yourself' },
+    { id: 13, name: 'Movie', price: 15.50, description: 'United For Victory' },
+    { id: 14, name: 'Paper', price: 29.29, description: 'Mutipurpose Office' },
+    { id: 15, name: 'Toothpaste', price: 49.99, description: 'Dr. Henderson Mint Shield' },
   ];
 
   // useState to manage the list of products
